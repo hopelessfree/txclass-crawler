@@ -1,15 +1,15 @@
 module.exports = {
 	app: [
-    {
-    	name: 'txclass-crawler',
-    	script: 'app.js',
-    	env: {
-    		COMMON_VARIABLE: 'true'
-    	},
-    	env_production: {
-    		NODE_ENV: 'production'
-    	}
-    }
+		{
+			name: 'txclass-crawler',
+			script: 'app.js',
+			env: {
+				COMMON_VARIABLE: 'true'
+			},
+			env_production: {
+				NODE_ENV: 'production'
+			}
+		}
 	],
 
 	deploy: {
