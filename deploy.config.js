@@ -1,7 +1,7 @@
 module.exports = {
 	app: [
     {
-    	name: 'official_web_site_api',
+    	name: 'txclass-crawler',
     	script: 'app.js',
     	env: {
     		COMMON_VARIABLE: 'true'
@@ -15,10 +15,10 @@ module.exports = {
 	deploy: {
 		production: {
 			user: 'root',
-			host: '47.105.106.4',
+			host: '47.96.134.225',
 			ref: 'origin/master',
-			repo: 'https://gitee.com/jsjiajia_tishengban/jspp_api.git',
-			path: '/www/jspp_api/production',
+			repo: 'https://github.com/hopelessfree/txclass-manager.git',
+			path: '/www/txclass-crawler/production',
 			'pre-deploy': 'git fetch --all',
 			'post-deploy': 'npm install && npm run prd && pm2 startOrRestart deploy.config.js --env production'
 		}
