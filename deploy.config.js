@@ -2,7 +2,7 @@ module.exports = {
 	app: [
 		{
 			name: 'txclass-crawler',
-			script: './app.js',
+			script: 'app.js',
 			env: {
 				COMMON_VARIABLE: 'true'
 			},
