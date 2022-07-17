@@ -20,7 +20,7 @@ module.exports = {
 			repo: 'https://github.com/hopelessfree/txclass-crawler.git',
 			path: '/www/txclass-crawler/production',
 			'pre-deploy': 'git fetch --all',
-			'post-deploy': 'yarn && yarn prd && pm2 startOrRestart deploy.config.js --env production'
+			'post-deploy': 'yarn install && yarn prd && pm2 startOrRestart deploy.config.js --env production'
 		}
 	}
 }
