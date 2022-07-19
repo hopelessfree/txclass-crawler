@@ -8,7 +8,8 @@
     "prd": "pm2 start bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "pm2 deploy deploy.config.js production setup",
-    "deploy": "pm2 deploy deploy.config.js production"
+    "deploy": "pm2 deploy deploy.config.js production",
+    "update": "pm2 deploy deploy.config.js production update"
   },
   "dependencies": {
     "debug": "^4.1.1",
