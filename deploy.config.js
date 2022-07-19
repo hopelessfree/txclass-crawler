@@ -1,8 +1,8 @@
 module.exports = {
-	app: [
+	apps: [
 		{
 			name: 'txclass-crawler',
-			script: 'app.js',
+			script: './app.js',
 			env: {
 				COMMON_VARIABLE: 'true'
 			},
