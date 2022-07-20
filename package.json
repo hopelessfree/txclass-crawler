@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node bin/www",
-    "dev": "cross-env NODE_ENV=production nodemon bin/www",
+    "dev": "cross-env NODE_ENV=dev nodemon bin/www",
     "prd": "cross-env NODE_ENV=production pm2 start bin/www -f",
     "setup": "pm2 deploy deploy.config.js production setup",
     "deploy": "pm2 deploy deploy.config.js production",

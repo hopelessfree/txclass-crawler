@@ -33,12 +33,15 @@ const {
   getStudentData,
   changeStatus: changeStudentStatus
 } = require('../services/Student')
+const { isPrd } = require('../config/env_config')
 
 
 
 class Index {
   async index(ctx, next) {
     const { session } = ctx
+
+    console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 
     if (!session.uid) {
       session.uid = 1
@@ -48,7 +51,9 @@ class Index {
     }
 
     ctx.body = {
-      session
+      session,
+      env: process.env.NODE_ENV,
+      isPrd: isPrd,
     }
 
   }
