@@ -49,5 +49,5 @@ module.exports = {
     secret: 'JKl&*9lj2F@#3kflsAfkDfl',
   },
 
-  corsOrigin: isPrd ? 'http://txclass-manager.songxianwei.com' : 'http://localhost:3001',
+  corsOrigin: isPrd ? 'http://txclass-manager.songxianwei.com' : 'http://localhost:3000',
 }

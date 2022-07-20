@@ -6,7 +6,7 @@ module.exports = async function (options) {
     args: ['--no-sandbox', '--disable-setuid-sandbox'], //沙盒 沙箱
     handleSIGINT: false,
     ignoreDefaultArgs: ['--disable-extensions'],
-    executablePath: '/root/.chromium-browser-snapshots/linux-722234/chrome-linux/chrome'
+    executablePath: '/root/chrome-linux/chrome'
   }),
     pg = await bs.newPage()
 

@@ -8,7 +8,7 @@
     "prd": "cross-env NODE_ENV=production pm2 start bin/www -f",
     "setup": "pm2 deploy deploy.config.js production setup",
     "deploy": "pm2 deploy deploy.config.js production",
-    "update": "pm2 deploy deploy.config.js production update -f"
+    "update": "pm2 deploy deploy.config.js production update"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
