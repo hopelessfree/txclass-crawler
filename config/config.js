@@ -39,7 +39,7 @@ module.exports = {
   redis: {
     all: `${REDIS_CONF[1]}:${REDIS_CONF[0]}`
   },
-
+  
   admin: {
     username: 'admin',
     password: 'admin',
