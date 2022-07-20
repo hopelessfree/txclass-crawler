@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "start": "node bin/www",
-    "dev": "NODE_ENV=dev nodemon bin/www",
-    "prd": "NODE_ENV=production pm2 start bin/www -f",
+    "dev": "cross-env NODE_ENV=production nodemon bin/www",
+    "prd": "cross-env NODE_ENV=production pm2 start bin/www -f",
     "setup": "pm2 deploy deploy.config.js production setup",
     "deploy": "pm2 deploy deploy.config.js production",
     "update": "pm2 deploy deploy.config.js production update -f"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "debug": "^4.1.1",
     "ejs": "^3.0.1",
     "koa": "^2.7.0",
