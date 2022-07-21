@@ -21,7 +21,7 @@ module.exports = {
 			path: '/www/txclass-crawler/production',
 			ssh_options: "StrictHostKeyChecking=no",
 			'pre-deploy': 'git fetch --all',
-			'post-deploy': 'yarn install && pm2 startOrRestart bin/www --env production'
+			'post-deploy': 'yarn install && pm2 startOrRestart deploy.config.js --env production'
 		}
 	}
 }
