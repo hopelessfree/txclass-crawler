@@ -2,7 +2,7 @@ module.exports = {
 	apps: [
 		{
 			name: 'txclass-crawler',
-			script: './app.js',
+			script: './bin/www',
 			env: {
 				COMMON_VARIABLE: 'true'
 			},
@@ -21,7 +21,7 @@ module.exports = {
 			path: '/www/txclass-crawler/production',
 			ssh_options: "StrictHostKeyChecking=no",
 			'pre-deploy': 'git fetch --all',
-			'post-deploy': 'yarn install && yarn prd && pm2 startOrRestart deploy.config.js --env production'
+			'post-deploy': 'yarn install && pm2 startOrRestart deploy.config.js --env production'
 		}
 	}
 }
